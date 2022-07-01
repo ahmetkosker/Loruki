@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #047AED;
+    --warning-color: rgb(255, 204, 102);
+    --error-color: rgb(255, 0, 0);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-warning {
+    background-color: var(--warning-color);
+
+}
+
+.bg-error {
+    background-color: var(--error-color);
+
+}
+
+.text-center {
+    text-align: center;
+}
