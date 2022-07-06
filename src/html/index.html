@@ -36,16 +36,16 @@
 
     <header class="header ">
         <div class="container grid">
-            <section class="header-left-bar">
+            <section class="header-left-bar flex">
                 <h1>Easier Deployment</h1>
                 <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals.
                     Fill out the form to try a demo of our platform</p>
-                <a href="#">
+                <a href="#" class="btn">
                     Read More
                 </a>
             </section>
-            <form class="demo-form text-center">
-                <h2>Request a Demo</h2>
+            <form class="demo-form flex text-center">
+                <h2 class="black">Request a Demo</h2>
                 <div class="form-control">
                     <input type="text" placeholder="Name">
                 </div>
@@ -55,12 +55,48 @@
                 <div class="form-control">
                     <input type="email" placeholder="Email">
                 </div>
-                <div class="form-control">
-                    <input type="submit" placeholder="Send">
-                </div>
+                <input class="btn btn-primary" type="submit" value="Send">
             </form>
         </div>
     </header>
+
+    <section class="stats">
+        <div class="container flex">
+            <div class="title text-center">
+                <p>
+                    Welcome to the best platform for building applications of all types with modern architecture and
+                    scaling
+                </p>
+            </div>
+            <div class="details flex text-center">
+                <div class="deployments">
+                    <p><i class="fas fa-server fa-3x"></i></p>
+                    <p>10,349,405</p>
+                    <p>Deployments</p>
+                </div>
+                <div class="published">
+                    <p><i class="fas fa-upload fa-3x"></i></p>
+                    <p>987 TB</p>
+                    <p>Published</p>
+                </div>
+                <div class="projects">
+                    <p><i class="fas fa-project-diagram fa-3x"></i></p>
+                    <p>2,343,265</p>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cli">
+        <div class="container grid">
+            <div class="left-bar">
+                <img src="/images/cli.png">
+            </div>
+            <div class="right-bar">
+            </div>
+        </div>
+    </section>
 
 </body>
 
