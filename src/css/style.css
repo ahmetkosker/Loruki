@@ -76,6 +76,10 @@ li:hover {
     border-bottom: 2px solid #ffffff;
 }
 
+.white {
+    color: #ffffff !important;
+}
+
 .container {
     max-width: 1000px;
     height: 100px;
@@ -543,34 +547,34 @@ p {
     margin: 0 9px;
 }
 
-.right-bar {
+.docs-main .container .right-bar {
     grid-column: 2 / span 3;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     padding: 12px 24px;
     border-radius: 9px;
 }
 
-.right-bar h1 {
+.docs-main .container .right-bar h1 {
     color: #333;
     font-size: 27px;
     font-weight: 100;
     margin: 12px 0;
 }
 
-.right-bar h2 {
+.docs-main .container .right-bar h2 {
     color: #333;
     font-size: 18px;
     font-weight: 100;
     margin: 18px 0;
 }
 
-.right-bar p {
+.docs-main .container .right-bar p {
     color: #333;
     font-size: 16px;
     font-weight: 100;
 }
 
-.right-bar .btn {
+.docs-main .container .right-bar .btn {
     padding: 12px 18px;
 }
 
