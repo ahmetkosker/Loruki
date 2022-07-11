@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class=" navbar bg-primary">
+    <nav class="navbar bg-primary">
         <div class="container flex">
             <div>
                 <h2>Loruki.</h2>
@@ -21,13 +21,13 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a id="home" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Features</a>
+                        <a id="features">Features</a>
                     </li>
                     <li>
-                        <a href="#">Docs</a>
+                        <a id="docs">Docs</a>
                     </li>
                 </ul>
             </div>
@@ -163,7 +163,7 @@
             </div>
             <div class="links flex">
                 <a>Home</a>
-                <a>Features</a>
+                <a href="features.html">Features</a>
                 <a>Docs</a>
             </div>
             <div class="socials">
@@ -174,6 +174,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var home = document.getElementById('home');
+        var features = document.getElementById('features');
+        var docs = document.getElementById('docs');
+        home.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/index.html";
+        });
+
+        features.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/features.html";
+        });
+
+        docs.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/docs.html";
+        });  
+    </script>
 
 </body>
 

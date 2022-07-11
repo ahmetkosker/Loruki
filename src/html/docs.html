@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <title>Features</title>
+</head>
+
+<body>
+
+    <nav class=" navbar bg-primary">
+        <div class="container flex">
+            <div>
+                <h2>Loruki.</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a id="home" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="features">Features</a>
+                    </li>
+                    <li>
+                        <a id="docs">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="features-header">
+        <div class="container grid">
+            <div class="features-header-left-bar flex">
+                <h1>Docs</h1>
+                <p>Learn how to work with the Loruki platform
+                </p>
+            </div>
+            <img src="/images/docs.png">
+        </div>
+    </header>
+
+    <section class="docs-main">
+        <div class="container grid">
+            <div class="left-bar flex">
+                <div class="flex columns">
+                    <h3>Essentials</h3>
+                    <a href="#" class="primary">Indroduction</a>
+                    <a href="#">About Loruki</a>
+                    <a href="#">Installation</a>
+                </div>
+                <div class="flex columns">
+                    <h3>Deployment</h3>
+                    <a href="#">Setting up a container</a>
+                    <a href="#">Using the CLI</a>
+                    <a href="#">Managing resources</a>
+                    <a href="#">Upgrade & downgrade</a>
+                </div>
+            </div>
+            <div class="right-bar">
+                <h1>Introduction</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo facere perferendis laborum?
+                    Similique recusandae incidunt eos dolorum aliquam ipsam unde perspiciatis laudantium totam quam
+                    laborum velit, at maxime minus?</p>
+                <p class="alert">
+                    <i class="fas fa-info"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                </p>
+
+                <h2><b>Lorem, ipsum dolor.</b></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id,
+                    atque veritatis! At, vero porro.</p>
+                <a href="#" class="btn btn-primary">Install CLI</a>
+
+
+                <h2><b>Requirements</b></h2>
+                <p>Windows 10, Mac OSX, Linux</p>
+                <p>Node.js v12 or higher
+                </p>
+                <h2><b>Install</b></h2>
+                <div class="code">
+                    <p>Mac (Homebrew)</p>
+                    <pre>$ brew install loruki-cli</pre>
+                </div>
+                <div class="code">
+                    <p>NPM</p>
+                    <pre>$ npm install loruki-cli</pre>
+                </div>
+                <div class="code">
+                    <p>Yarn</p>
+                    <pre>$ yarn install loruki-cli</pre>
+                </div>
+
+            </div>
+    </section>
+
+    <footer class="m-footer">
+        <div class="container grid">
+            <div class="copyright">
+                <h1>Loruki</h1>
+                <p>Copyright © 2020</p>
+            </div>
+            <div class="links flex">
+                <a>Home</a>
+                <a href="features.html">Features</a>
+                <a>Docs</a>
+            </div>
+            <div class="socials">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var home = document.getElementById('home');
+        var features = document.getElementById('features');
+        var docs = document.getElementById('docs');
+        home.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/index.html";
+        });
+
+        features.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/features.html";
+        });
+
+        docs.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/docs.html";
+        });  
+    </script>
+
+</body>
+
+</html>

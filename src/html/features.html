@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <title>Features</title>
+</head>
+
+<body>
+
+    <nav class=" navbar bg-primary">
+        <div class="container flex">
+            <div>
+                <h2>Loruki.</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a id="home" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="features">Features</a>
+                    </li>
+                    <li>
+                        <a id="docs">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="features-header">
+        <div class="container grid">
+            <div class="features-header-left-bar flex">
+                <h1>Features</h1>
+                <p>Check out the features of Loruki that separate us from the competition</p>
+            </div>
+            <img src="/images/server.png">
+        </div>
+    </header>
+
+    <section class="features-m">
+        <div class="container grid">
+            <div class="features-m-left-bar flex">
+                <h1>The Loruki Platform</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor cupiditate dignissimos temporibus
+                    perspiciatis quae! Suscipit qui, consectetur ea consequatur, doloribus repellendus quasi, aut
+                    corporis nam alias culpa. Nostrum, inventore accusantium!</p>
+            </div>
+            <img src="/images/server2.png">
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container grid">
+            <div class="flex">
+                <i class="fas fa-server fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo saepe corrupti et dolorem
+                    voluptate at, nostrum rem voluptatem ab alias quia molestiae ea, libero nihil deserunt. Molestias,
+                    eum? Necessitatibus!</p>
+            </div>
+            <div class="flex">
+                <i class="fas fa-network-wired fa-3x"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae perferendis culpa,
+                    reiciendis a itaque debitis qui vel dignissimos ipsum!</p>
+            </div>
+            <div class="flex">
+                <i class="fas fa-laptop-code fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, magnam.</p>
+            </div>
+            <div class="flex">
+                <i class="fas fa-database fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, a!</p>
+            </div>
+            <div class="flex">
+                <i class="fas fa-power-off fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, magnam.</p>
+            </div>
+            <div class="flex">
+                <i class="fas fa-upload fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, magnam.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="m-footer">
+        <div class="container grid">
+            <div class="copyright">
+                <h1>Loruki</h1>
+                <p>Copyright © 2020</p>
+            </div>
+            <div class="links flex">
+                <a>Home</a>
+                <a href="features.html">Features</a>
+                <a>Docs</a>
+            </div>
+            <div class="socials">
+                <a><i class="fa-brands fa-github"></i></a>
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var home = document.getElementById('home');
+        var features = document.getElementById('features');
+        var docs = document.getElementById('docs');
+        home.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/index.html";
+        });
+
+        features.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/features.html";
+        });
+
+        docs.addEventListener('click', function () {
+            window.location.href = "http://127.0.0.1:5500/src/html/docs.html";
+        });  
+    </script>
+
+</body>
+
+</html>
