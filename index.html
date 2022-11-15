@@ -1,12 +1,193 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/utility.css" />
+    <title>Loruki</title>
+  </head>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <body>
+    <nav class="navbar bg-primary">
+      <div class="container flex">
+        <div>
+          <h2>Loruki.</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a id="home" href="#">Home</a>
+            </li>
+            <li>
+              <a id="features">Features</a>
+            </li>
+            <li>
+              <a id="docs">Docs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</body>
+    <header class="header">
+      <div class="container grid">
+        <section class="header-left-bar flex">
+          <h1>Easier Deployment</h1>
+          <p class="white">
+            Deploy web apps of all kinds, from large scale enterprise APIs to
+            static websites for individuals. Fill out the form to try a demo of
+            our platform
+          </p>
+          <a href="#" class="btn"> Read More </a>
+        </section>
+        <form class="demo-form flex text-center">
+          <h2 class="black">Request a Demo</h2>
+          <div class="form-control">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Company Name" />
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Email" />
+          </div>
+          <input class="btn btn-primary" type="submit" value="Send" />
+        </form>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="container flex">
+        <div class="title text-center">
+          <p>
+            Welcome to the best platform for building applications of all types
+            with modern architecture and scaling
+          </p>
+        </div>
+        <div class="details flex text-center">
+          <div class="deployments">
+            <p><i class="fas fa-server fa-3x"></i></p>
+            <p>10,349,405</p>
+            <p>Deployments</p>
+          </div>
+          <div class="published">
+            <p><i class="fas fa-upload fa-3x"></i></p>
+            <p>987 TB</p>
+            <p>Published</p>
+          </div>
+          <div class="projects">
+            <p><i class="fas fa-project-diagram fa-3x"></i></p>
+            <p>2,343,265</p>
+            <p>Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cli">
+      <div class="container grid">
+        <div class="left-bar">
+          <img src="./images/cli.png" />
+        </div>
+        <div class="right-bar flex">
+          <p>Easy to use, cross platform CLI</p>
+          <p>Deploy in seconds</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad">
+      <div class="container grid">
+        <div class="left-bar flex">
+          <h1>Extreme Cloud Hosting</h1>
+          <p class="white">
+            Cloud hosting like you've never seen. Fast, efficient and scalable
+          </p>
+          <a href="#" class="btn"> Read More </a>
+        </div>
+        <div class="right-bar flex">
+          <img src="./images/cloud.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sl">
+      <div class="container text-center">
+        <h1 class="title">Supported Languages</h1>
+        <div class="languages flex text-center">
+          <div>
+            <h3>Node.js</h3>
+            <img src="./images/logos/node.png" />
+          </div>
+          <div>
+            <h3>C#</h3>
+            <img src="./images/logos/csharp.png" />
+          </div>
+          <div>
+            <h3>Go</h3>
+            <img src="./images/logos/go.png" />
+          </div>
+          <div>
+            <h3>Php</h3>
+            <img src="./images/logos/php.png" />
+          </div>
+          <div>
+            <h3>Python</h3>
+            <img src="./images/logos/python.png" />
+          </div>
+          <div>
+            <h3>Scala</h3>
+            <img src="./images/logos/scala.png" />
+          </div>
+          <div>
+            <h3>Ruby</h3>
+            <img src="./images/logos/ruby.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="m-footer">
+      <div class="container grid">
+        <div class="copyright">
+          <h1>Loruki</h1>
+          <p>Copyright © 2020</p>
+        </div>
+        <div class="links flex">
+          <a>Home</a>
+          <a href="features.html">Features</a>
+          <a>Docs</a>
+        </div>
+        <div class="socials">
+          <a><i class="fa-brands fa-github"></i></a>
+          <a><i class="fa-brands fa-facebook"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+          <a><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var home = document.getElementById("home");
+      var features = document.getElementById("features");
+      var docs = document.getElementById("docs");
+      home.addEventListener("click", function () {
+        window.location.href = "http://127.0.0.1:5500/index.html";
+      });
+
+      features.addEventListener("click", function () {
+        window.location.href = "http://127.0.0.1:5500/features.html";
+      });
+
+      docs.addEventListener("click", function () {
+        window.location.href = "http://127.0.0.1:5500/docs.html";
+      });
+    </script>
+  </body>
 </html>
